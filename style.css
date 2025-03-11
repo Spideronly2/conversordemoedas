@@ -1,55 +1,76 @@
-/* style.css */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f9;
-    padding: 20px;
-    margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #d1ce0b, #bf6510);
 }
 
-.container {
-    max-width: 400px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.calculadora {
+  background: #222;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 300px;
 }
 
-h1 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
+#display {
+  width: calc(100% - 20px);
+  height: 60px;
+  font-size: 2em;
+  text-align: right;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background: #333;
+  color: white;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-form label {
-    display: block;
-    font-size: 1em;
-    margin-bottom: 5px;
-}
-
-input, select, button {
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.botoes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
 button {
-    background-color: #4CAF50;
-    color: white;
-    font-size: 1em;
-    font-weight: bold;
-    cursor: pointer;
+  width: 60px;
+  height: 60px;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #444;
+  color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
-    background-color: #45a049;
+  background: #666;
 }
 
-#result {
-    font-size: 1.2em;
-    margin-top: 15px;
-    font-weight: bold;
-    color: #333;
+button:active {
+  transform: scale(0.95);
+}
+
+button:nth-child(1) {
+  background: #ff4444;
+}
+
+button:nth-child(1):hover {
+  background: #ff2222;
+}
+
+button:nth-child(17) {
+  background: #ded51b;
+}
+
+button:nth-child(17):hover {
+  background: #ded51b;
 }
